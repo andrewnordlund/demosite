@@ -1,0 +1,44 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+font-size: 16px;
+}
+
+
+.form-group {
+	margin-bottom: 15px;
+}
+.form-group label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+.form-control {
+	max-width: 100%;
+	width: auto;
+	display: block;
+	height: 37px;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.4375;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+select.dec, option {
+	font-size: 18pt;
+} 
+/*
+
+select option:hover {
+  color: #000; 
+  box-shadow: inset 20px 20px #00f;
+}
+*/
+span.extraInfo {
+	font-weight: 500;
+	display: inline-block;
+	font-size: 95%;
+}
