@@ -1,3 +1,4 @@
+console.log ("Loading js....");
 let controls = {"pageTxt" :null, "pageErrs":null, "MainContent_Errors":null, "pageErrorErrs":null, "submitBtn":null};
 
 for (let k in controls) {
