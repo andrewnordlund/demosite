@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Demo Page 1</title>
+		<link rel="Stylesheet" href="styles/demosite.css" type="text/css">
+		<style>
+    option:hover{background-color:yellow;}
+    </style>
 	</head>
 	<body>
 		<header>
@@ -12,12 +16,14 @@
 			<section>
 				<form method="GET" action="">
 					<div class="form-group">
-						<label for="page">Page:</label>
-						<input type="text" id="page" name="page">
+						<label for="page">Page:
+							<span class="extraInfo">It's important that you put the page here.  Put the full URL.  Make sure you put the fully qualified URL in but not page fragments.  URLs should start with <code>https</code>, though the "s" is optional. A page fragment is the part that comes after the hashtag in the URL.  Don't include that.  Take out the hashtag and everything after it.</span>
+						</label>
+						<input type="text" id="page" name="page" class="form-control">
 					</div>
 					            <div class="form-group">
                 <label for="MainContent_Errors" id="MainContent_ErrorLabel" Class="required">Errors</label>
-                <select name="ctl00$MainContent$Errors" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$Errors\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_Errors" class="form-control">
+                <select name="errors" id="MainContent_Errors" class="form-control dec">
 	<option selected="selected" value="16">&amp;lt;dl&amp;gt; elements must only directly contain properly-ordered &amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; groups, &amp;lt;script&amp;gt;, or &amp;lt;template&amp;gt; elements</option>
 	<option value="17">&amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; elements must be contained by a &amp;lt;dl&amp;gt;</option>
 	<option value="18">&amp;lt;html&amp;gt; element must have a lang attribute</option>
@@ -328,7 +334,7 @@
 </select>
             </div>
 	    <div class="form-group">
-		    <input type="Submit">
+		    <input type="Submit" value="Submit">
 	    </div>
 				</form>
 		</main>
