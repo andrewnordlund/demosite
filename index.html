@@ -16,15 +16,17 @@
 			<section>
 				<form method="GET" action="">
 					<div class="form-group">
-						<label for="page">Page:
+						<label for="pageTxt">Page:
 							<span class="extraInfo">It's important that you put the page here.  Put the full URL.  Make sure you put the fully qualified URL in but not page fragments.  URLs should start with <code>https</code>, though the "s" is optional. A page fragment is the part that comes after the hashtag in the URL.  Don't include that.  Take out the hashtag and everything after it.</span>
 						</label>
-						<input type="text" id="page" name="page" class="form-control">
+						<input type="text" id="pageTxt" name="page" class="form-control">
+						<div class="errors" id="pageErrs"></div>
 					</div>
 					            <div class="form-group">
                 <label for="MainContent_Errors" id="MainContent_ErrorLabel" Class="required">Errors</label>
                 <select name="errors" id="MainContent_Errors" class="form-control dec">
-	<option selected="selected" value="16">&amp;lt;dl&amp;gt; elements must only directly contain properly-ordered &amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; groups, &amp;lt;script&amp;gt;, or &amp;lt;template&amp;gt; elements</option>
+			<option value="-1"> --- Please select an error --- </option>
+	<option  value="16">&amp;lt;dl&amp;gt; elements must only directly contain properly-ordered &amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; groups, &amp;lt;script&amp;gt;, or &amp;lt;template&amp;gt; elements</option>
 	<option value="17">&amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; elements must be contained by a &amp;lt;dl&amp;gt;</option>
 	<option value="18">&amp;lt;html&amp;gt; element must have a lang attribute</option>
 	<option value="19">&amp;lt;html&amp;gt; element must have a valid value for the lang attribute</option>
@@ -332,13 +334,15 @@
 	<option value="96">Zooming and scaling must not be disabled</option>
 
 </select>
+		<div class="errors" id="pageErrorErrs"></div>
             </div>
 	    <div class="form-group">
-		    <input type="Submit" value="Submit">
+		    <input type="Submit" value="Submit" id="submitBtn">
 	    </div>
 				</form>
 		</main>
 		<footer>
 		</footer>
+		<script src="scripts/sitedemo.js"></script>
 	</body>
 </html>
