@@ -1,8 +1,16 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
-font-size: 16px;
+	font-size: 16px;
+	background-color: #F0F0F0;;
 }
-
+section {
+	background-color: #FFFFFF;
+	padding: 0.5em 1ex;
+}
+.errors {
+	color: #AA0000;
+	line-height: 2.5em;
+}
 
 .form-group {
 	margin-bottom: 15px;
