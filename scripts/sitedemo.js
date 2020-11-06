@@ -7,11 +7,12 @@ for (let k in controls) {
 
 function submitHandler (e) {
 	e.preventDefault();
-	if (controls["MainContent_Errors"].value == -1 {
+	if (controls["MainContent_Errors"].value == -1) {
 		controls["pageErrorErrs"].innerHTML = "Please slect a page error.";
 	}
 	if (controls["pageTxt"].value == "") {
 		controls["pageErrs"].innerHTML = "Please enter a page.";
+	}
 }
 
 controls["submitBtn"].addEventListener("click", submitHandler, false);
