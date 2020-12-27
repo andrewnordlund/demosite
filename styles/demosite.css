@@ -2,7 +2,32 @@ body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	background-color: #F0F0F0;;
+	display: grid;
+	grid-template-areas: 	"header"
+				"nav"
+				"content"
+				"footer";
+	width: 100%;
+	max-width: 800px;
+	grid-gap: 5px;
 }
+header {
+	grid-area: header;
+}
+nav {
+	grid-area: nav;
+}
+
+main {
+	grid-area: content;
+}
+footer {
+	grid-area: footer;
+	padding: 1em;
+	border-top: solid thin black;
+}
+
+
 section {
 	background-color: #FFFFFF;
 	padding: 0.5em 1ex;
@@ -49,4 +74,23 @@ span.extraInfo {
 	font-weight: 500;
 	display: inline-block;
 	font-size: 95%;
+}
+
+
+
+@media (min-width: 800px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 2fr 2fr;
+		grid-template-areas: 	"header header header"
+					"nav content content"
+					"footer footer footer";
+		width: 100%;
+		grid-gap: 5px;
+	}
+	nav {
+		grid-area: nav;
+		margin: 0 1.5em;
+		min-width: 13em;
+	}
 }
