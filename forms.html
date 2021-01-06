@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Forms - Demo Site</title>
+		<link rel="Stylesheet" href="styles/demosite.css" type="text/css">
+		<style>
+    option:hover{background-color:yellow;}
+    </style>
+	</head>
+	<body>
+		<header>
+			<h1>Forms</h1>
+		</header>
+		<main>
+			<section aria-live="assertive" aria-atomic="true">
+				<form method="GET" action="">
+					<div class="form-group">
+						<label for="pageTxt">Page:
+							<span class="extraInfo">It's important that you put the page here.  Put the full URL.  Make sure you put the fully qualified URL in but not page fragments.  URLs should start with <code>https</code>, though the "s" is optional. A page fragment is the part that comes after the hashtag in the URL.  Don't include that.  Take out the hashtag and everything after it.</span>
+						</label>
+						<input type="text" id="pageTxt" name="page" class="form-control">
+						<div class="errors" id="pageErrs"></div>
+					</div>
+					            <div class="form-group">
+                <label for="MainContent_Errors" id="MainContent_ErrorLabel" Class="required">Errors</label>
+                <select name="errors" id="MainContent_Errors" class="form-control dec">
+			<option value="-1"> --- Please select an error --- </option>
+	<option  value="16">&amp;lt;dl&amp;gt; elements must only directly contain properly-ordered &amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; groups, &amp;lt;script&amp;gt;, or &amp;lt;template&amp;gt; elements</option>
+	<option value="17">&amp;lt;dt&amp;gt; and &amp;lt;dd&amp;gt; elements must be contained by a &amp;lt;dl&amp;gt;</option>
+	<option value="18">&amp;lt;html&amp;gt; element must have a lang attribute</option>
+	<option value="19">&amp;lt;html&amp;gt; element must have a valid value for the lang attribute</option>
+	<option value="20">&amp;lt;html&amp;gt; elements with lang and xml:lang must have the same base language</option>
+	<option value="21">&amp;lt;li&amp;gt; elements must be contained in a &amp;lt;ul&amp;gt; or &amp;lt;ol&amp;gt;</option>
+	<option value="22">&amp;lt;marquee&amp;gt; elements are deprecated and must not be used</option>
+	<option value="23">&amp;lt;object&amp;gt; elements must have alternate text</option>
+	<option value="24">&amp;lt;ul&amp;gt; and &amp;lt;ol&amp;gt; must only directly contain &amp;lt;li&amp;gt;, &amp;lt;script&amp;gt; or &amp;lt;template&amp;gt; elements</option>
+	<option value="225">&amp;quot;About&amp;quot; Information Overlay Does Not Work On Mobile Devices</option>
+	<option value="265">&amp;quot;Back to top&amp;quot; link missing from bottom of mobile page</option>
+	<option value="257">&amp;quot;Date Modified&amp;quot; and &amp;quot;Version Number&amp;quot; missing from page</option>
+	<option value="258">&amp;quot;Footer links&amp;quot; section missing from page</option>
+	<option value="255">&amp;quot;Report a problem&amp;quot; button missing from page</option>
+	<option value="256">&amp;quot;Share this page&amp;quot; button missing from page</option>
+	<option value="131">A script that causes a blink effect without a mechanism to stop the blinking at 5 seconds or less</option>
+	<option value="141">A user interface control not having a programmatically determined name</option>
+	<option value="174">A webpage or web app that includes single-key shortcuts not including a control that allows users to turn the shortcuts off or a control that allows users to change the shortcuts to key combinations that include keys that are not upper or lower-case letters, punctuation, number, or symbol characters.</option>
+	<option value="164">Absence of a way to pause or stop an HTML5 media element that autoplays</option>
+	<option value="178">Accessible name contains the visible label text, but one or more other words are interspersed in the label</option>
+	<option value="177">Accessible name contains the visible label text, but the words of the visible label are not in the same order as they are in the visible label text</option>
+	<option value="25">accesskey attribute value must be unique</option>
+	<option value="176">Activating a button on initial touch location rather than the final touch location.</option>
+	<option value="26">Active &amp;lt;area&amp;gt; elements must have alternate text</option>
+	<option value="27">All &amp;lt;th&amp;gt; elements and elements with role=&quot;columnheader&quot; or role=&quot;rowheader&quot; must have data cells they describe</option>
+	<option value="28">All cells in a &amp;lt;table&amp;gt; element that use the headers attribute must only refer to other cells of that same &amp;lt;table&amp;gt;</option>
+	<option value="29">All non-empty &amp;lt;td&amp;gt; elements in tables larger than 3 by 3 must have an associated table header</option>
+	<option value="30">All page content must be contained by landmarks</option>
+	<option value="180">An inability to disable motion actuation</option>
+	<option value="101">An object or applet, such as Java or Flash, that has blinking content without a mechanism to pause the content that blinks for more than five seconds</option>
+	<option value="233">Archived Notice Not Appearing On Mobile Devices</option>
+	<option value="231">Archived Page Not Marked as Archived</option>
+	<option value="31">ARIA attributes must conform to valid names</option>
+	<option value="32">ARIA attributes must conform to valid values</option>
+	<option value="33">ARIA input fields have an accessible name</option>
+	<option value="34">ARIA role must be appropriate for the element</option>
+	<option value="35">ARIA roles used must conform to valid values</option>
+	<option value="36">ARIA toggle fields have an accessible name</option>
+	<option value="37">aria-hidden elements do not contain focusable elements</option>
+	<option value="38">aria-hidden=&quot;true&quot; must not be present on the document &amp;lt;body&amp;gt;</option>
+	<option value="39">Audio must have controls that provide users with the ability to stop automatically played audio after three seconds</option>
+	<option value="40">Autocomplete attribute must be used correctly</option>
+	<option value="118">Automatically submitting a form and given a value</option>
+	<option value="236">Background color not #FFFFFF</option>
+	<option value="41">Banner landmark must not be contained in another landmark</option>
+	<option value="15">blink elements are deprecated and must not be used</option>
+	<option value="42">Bold, italic text and font-size are not used to style &amp;lt;p&amp;gt; elements as a heading</option>
+	<option value="253">Breadcrumb trail not using &amp;gt; as a separator</option>
+	<option value="226">Breadcrumbs Are Missing On Larger Mobile Devices</option>
+	<option value="43">Buttons must have discernible text</option>
+	<option value="264">Canada Wordmark missing from bottom of page</option>
+	<option value="102">Captions omitting some dialogue or important sound effects</option>
+	<option value="286">CDTS Version is more than 3 versions out of date</option>
+	<option value="44">Certain ARIA roles must be contained by particular parent elements</option>
+	<option value="45">Certain ARIA roles must contain particular children</option>
+	<option value="97">Changing the meaning of content by positioning information with CSS</option>
+	<option value="103">Combining multiple content formats in a way that traps users inside one format type</option>
+	<option value="46">Complementary landmarks and/or asides are top level</option>
+	<option value="230">Content Does Not Display Properly in Print Preview</option>
+	<option value="276">Content is not equivalent in both official languages</option>
+	<option value="280">Content is not organized into a logical structure</option>
+	<option value="268">Content not in one of the 5 user-need categories</option>
+	<option value="219">Content Overlay Does Not Work On Mobile Devices</option>
+	<option value="227">Content Page Does Not Work on Larger Mobile Devices</option>
+	<option value="216">Content Page Does Not Work On Mobile Devices</option>
+	<option value="166">Content shown on hover not being hoverable</option>
+	<option value="47">Contentinfo landmark must not be contained in another landmark</option>
+	<option value="146">Creating links that are not visually evident without color vision</option>
+	<option value="48">CSS Media queries are not used to lock display orientation</option>
+	<option value="252">Current page is displayed at the end of the breadcrumb trail</option>
+	<option value="283">Custom CSS duplicating WET styles</option>
+	<option value="49">Data or header cells should not be used to give caption to a data table</option>
+	<option value="238">Default link colour is not #2b4380</option>
+	<option value="181">Disrupting or disabling system level features which allow the user to disable motion actuation</option>
+	<option value="50">Documents must contain a title element to aid in navigation</option>
+	<option value="188">Does not Use GoC Domain Names</option>
+	<option value="277">Does not use plain language</option>
+	<option value="149">Duplicate values of type ID</option>
+	<option value="51">Elements containing &amp;lt;code&amp;gt;role=&amp;quot;img&amp;quot;&amp;lt;/code&amp;gt; have an alternative text</option>
+	<option value="52">Elements in the focus order need a role appropriate for interactive content</option>
+	<option value="53">Elements must only use allowed ARIA attributes</option>
+	<option value="54">Elements should not have tabindex greater than zero</option>
+	<option value="55">Ensure that links with the same accessible name serve a similar purpose</option>
+	<option value="56">Ensure that scrollable region has keyboard access</option>
+	<option value="57">Ensures the document has at most one main landmark</option>
+	<option value="172">Failure to make content dismissable without moving pointer hover or keyboard focus</option>
+	<option value="173">Failure to meet by content on hover or focus not remaining visible until dismissed or invalid</option>
+	<option value="251">First item in breadcrumbs is not Canada.ca</option>
+	<option value="58">Form &amp;lt;input&amp;gt; elements must have labels</option>
+	<option value="59">Form &amp;lt;input&amp;gt; elements should have a visible label</option>
+	<option value="242">Form error or required element indicator is not #d3080c</option>
+	<option value="60">Form fields do not have duplicate labels</option>
+	<option value="61">Frames must be tested with axe-core</option>
+	<option value="62">Frames must have a unique title attribute</option>
+	<option value="63">Frames must have title attribute</option>
+	<option value="175">Functionality can be operated by pointer input but not with single-point activation alone</option>
+	<option value="179">Functionality that can only be activated via devicemotion events (e.g., shaking or tilting)</option>
+	<option value="246">Government of Canada signature not linked to Canada.ca home</option>
+	<option value="104">Having a text alternative that does not include information that is conveyed by color differences in the image</option>
+	<option value="64">Heading levels should only increase by one</option>
+	<option value="65">Headings must not be empty</option>
+	<option value="66">Hidden content on the page cannot be analyzed</option>
+	<option value="67">ID attribute value must be unique</option>
+	<option value="68">ID attribute values must be unique</option>
+	<option value="105">Identifying content only by its shape or location</option>
+	<option value="153">Identifying required or error fields using color differences only</option>
+	<option value="69">IDs used in ARIA and labels must be unique</option>
+	<option value="70">Image buttons must have alternate text</option>
+	<option value="281">Images and videos are improperly used on site</option>
+	<option value="71">Images must have alternate text</option>
+	<option value="106">Implementing custom controls that do not use an accessibility API for the technology, or do so incompletely</option>
+	<option value="282">Improper link usage</option>
+	<option value="269">Improper URL</option>
+	<option value="124">Improperly emulating links</option>
+	<option value="271">Improperr sub-domain URL</option>
+	<option value="107">Including scrolling content where movement is not essential to the activity without also including a mechanism to pause and restart the content</option>
+	<option value="206">Incorrect Site Title</option>
+	<option value="295">Incorrect template being used</option>
+	<option value="208">Incorrect Title on Content Page</option>
+	<option value="210">Incorrect Title on Server Message Page</option>
+	<option value="143">Incorrect use of start and end tags or attribute markup</option>
+	<option value="14">Incorrect Web Search</option>
+	<option value="161">Incorrectly associating table headers and content via the headers and id attributes</option>
+	<option value="72">Inline text spacing must be adjustable with custom stylesheets</option>
+	<option value="73">Input buttons must have discernible text</option>
+	<option value="159">Inserting non-decorative content by using :before and :after pseudo-elements and the &#39;content&#39; property in CSS</option>
+	<option value="74">Label and name from content mismatch</option>
+	<option value="75">Landmarks must have a unique role or role/label/title (i.e. accessible name) combination</option>
+	<option value="76">lang attribute must have a valid value</option>
+	<option value="224">Language Menu Does Not Work On Mobile Devices</option>
+	<option value="119">Launching a new window without prior warning when the selection of a radio button, check box or select list is changed</option>
+	<option value="316">Left-Nav menu not using wet.builder.secmenu</option>
+	<option value="235">Link not underlined</option>
+	<option value="77">Links must be distinguished from surrounding text in a way that does not rely on color</option>
+	<option value="78">Links must have discernible text</option>
+	<option value="262">Links not in correct order in footer section</option>
+	<option value="263">Links not in correct order in sub-footer section</option>
+	<option value="168">Locking the orientation to landscape or portrait view</option>
+	<option value="254">Long page title not shortened in breadcrumb trail</option>
+	<option value="241">Main accent colour is not #26374A</option>
+	<option value="79">Main landmark must not be contained in another landmark</option>
+	<option value="259">Mandatory link missing from Footer section</option>
+	<option value="261">Mandatory link missing from sub-footer section</option>
+	<option value="220">Menu Does Not Work On Mobile Devices</option>
+	<option value="195">Missing Accessibility Notice</option>
+	<option value="250">Missing breadcrumb trail</option>
+	<option value="203">Missing Canada Wordmark</option>
+	<option value="213">Missing Contact Information</option>
+	<option value="200">Missing Context Language Notice</option>
+	<option value="193">Missing Copyright Notices</option>
+	<option value="199">Missing Crown copyright symbol</option>
+	<option value="202">Missing FIP</option>
+	<option value="189">Missing Government of Canada Privacy Notice</option>
+	<option value="211">Missing Home Link</option>
+	<option value="192">Missing Hyperlinking Notice</option>
+	<option value="247">Missing language toggle</option>
+	<option value="212">Missing Last-Modified Date or Page Version Identifier</option>
+	<option value="214">Missing Link To Global Notices</option>
+	<option value="266">Missing mandatory element from theme page</option>
+	<option value="267">Missing mandatory element from topic page</option>
+	<option value="191">Missing Official Languages Notice</option>
+	<option value="204">Missing Other Language Link</option>
+	<option value="207">Missing Page Title on Content Page</option>
+	<option value="197">Missing Personal Information Collection Statement</option>
+	<option value="187">Missing property=&amp;quot;home&amp;quot; on the &amp;amp;lt;h1&amp;amp;gt;</option>
+	<option value="215">Missing Search Bar</option>
+	<option value="248">Missing Site Search box</option>
+	<option value="205">Missing Site Title</option>
+	<option value="232">Missing Social Media Disclaimer</option>
+	<option value="196">Missing Social Media Notice</option>
+	<option value="249">Missing Theme and topic menu</option>
+	<option value="201">Missing Third-party Icons Disclaimer</option>
+	<option value="198">Missing Third-party information liability disclaimer</option>
+	<option value="190">Missing Third-Party Server Notice</option>
+	<option value="209">Missing Title on Server Message Page</option>
+	<option value="194">Missing Trademark Notice</option>
+	<option value="284">More than 1 custom CSS file being used</option>
+	<option value="221">Navigation Overlay Does Not Work On Mobile Devices</option>
+	<option value="171">Not allowing for spacing override.</option>
+	<option value="162">Not correctly marking up table headers</option>
+	<option value="147">Not labeling a synchronized media alternative to text as an alternative</option>
+	<option value="120">Not marking up decorative images in HTML in a way that allows assistive technology to ignore them</option>
+	<option value="160">Not providing an accessible name for an image which is the only content in a link</option>
+	<option value="158">Not providing names for each part of a multi-part form field, such as a US telephone number</option>
+	<option value="287">Not registered for CDTS</option>
+	<option value="108">Not updating text alternatives when changes to non-text content occur</option>
+	<option value="184">Not Using ATOM Web Feed</option>
+	<option value="244">Not using grids for layout</option>
+	<option value="186">Not Using HTML5</option>
+	<option value="234">Not using proper typography (fonts, line lengths)</option>
+	<option value="288">Not using right version of CDTS</option>
+	<option value="185">Not Using UTF-8 Character Encoding</option>
+	<option value="138">Omitting the alt attribute or text alternative on img elements, area elements, and input elements of type image&quot;&quot;</option>
+	<option value="132">Opening a new window as soon as a new page is loaded</option>
+	<option value="299">Page doesn not have wet.builder.footer</option>
+	<option value="298">Page doesn not have wet.builder.preFooter</option>
+	<option value="300">Page doesn not have wet.builder.refFooter</option>
+	<option value="296">Page doesn not have wet.builder.refTop</option>
+	<option value="297">Page doesn not have wet.builder.top</option>
+	<option value="305">Page is missing Features</option>
+	<option value="306">Page is missing Footer</option>
+	<option value="304">Page is missing postContent</option>
+	<option value="303">Page is missing preContent</option>
+	<option value="301">Page is missing Search</option>
+	<option value="302">Page is missing siteMenu</option>
+	<option value="245">Page missing Government of Canada signature</option>
+	<option value="318">Page missing wet.builder.appFooter</option>
+	<option value="317">Page missing wet.builder.appTop</option>
+	<option value="80">Page must contain a level-one heading</option>
+	<option value="81">Page must have means to bypass repeated blocks</option>
+	<option value="82">Page must have one main landmark</option>
+	<option value="83">Page must not have more than one banner landmark</option>
+	<option value="84">Page must not have more than one contentinfo landmark</option>
+	<option value="109">Playing a sound longer than 3 seconds where there is no mechanism to turn it off</option>
+	<option value="139">Presenting navigation links in a different relative order on different pages</option>
+	<option value="121">Providing a text alternative that is not null (e.g., alt=spacer&quot; or alt=&quot;image&quot;) for images that should be ignored by assistive technology&quot;</option>
+	<option value="137">Providing link context only in content that is not related to the link</option>
+	<option value="140">Providing long descriptions for non-text content that does not serve the same purpose or does not present the same information</option>
+	<option value="148">Providing synchronized media without captions when the synchronized media presents more information than is presented on the page</option>
+	<option value="85">Required ARIA attributes must be provided</option>
+	<option value="142">Resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured</option>
+	<option value="86">Scope attribute should be used correctly on tables</option>
+	<option value="222">Search Overlay Does Not Work On Mobile Devices</option>
+	<option value="243">Selected element (in service initiation templates) is not #333333</option>
+	<option value="239">Selected link (on hover or focus) is not #0535d2</option>
+	<option value="228">Server Message Page Does Not Work On Larger Mobile Devices</option>
+	<option value="217">Server Message Pages Do Not Work On Mobile Devices</option>
+	<option value="87">Server-side image maps must not be used</option>
+	<option value="223">Settings Menu Does Not Work On Mobile Devices</option>
+	<option value="293">Site does not use static backup files</option>
+	<option value="285">Site uses a splash page</option>
+	<option value="319">Site uses a splash page</option>
+	<option value="290">Site uses custom footer without permission</option>
+	<option value="289">Site uses custom header without permission</option>
+	<option value="291">Site uses custon scripting that interferes with CDTS</option>
+	<option value="292">Site uses different URI in CDTS calls</option>
+	<option value="110">Specifying foreground colors without specifying background colors or vice versa</option>
+	<option value="229">Splash Page Does Not Work On Larger Mobile Devices</option>
+	<option value="218">Splash Page Does Not Work On Mobile Devices</option>
+	<option value="307">Splash page missing wet.builder.splash</option>
+	<option value="308">Splash page missing wet.builder.splashTop</option>
+	<option value="294">Static backup files are more than 3 versions out of date</option>
+	<option value="150">Styling element outlines and borders in a way that removes or renders non-visible the visual focus indicator</option>
+	<option value="260">Sub-footer links section missing from page</option>
+	<option value="88">SVG images and graphics require accessible text</option>
+	<option value="237">Text colour is not #333333</option>
+	<option value="89">Text elements must have sufficient color contrast against the background</option>
+	<option value="90">Text of buttons and links should not be repeated in the image alternative</option>
+	<option value="165">Text sized in viewport units</option>
+	<option value="152">Text-based form controls do not resize when visually rendered text is resized up to 200%</option>
+	<option value="91">The &amp;lt;caption&amp;gt; element should not contain the same text as the summary attribute</option>
+	<option value="167">The accessible name not containing the visible label text</option>
+	<option value="151">The focus state of a user interface component not being programmatically determinable or no notification of change of focus state available</option>
+	<option value="92">The skip-link target should exist and be focusable</option>
+	<option value="111">The title of a Web page not identifying the contents</option>
+	<option value="163">The use of role presentation on content which conveys semantic information</option>
+	<option value="93">Timed refresh must not exist</option>
+	<option value="313">Transactional page includes Feedback button</option>
+	<option value="315">Transactional page includes Footer</option>
+	<option value="312">Transactional page includes PostContent</option>
+	<option value="311">Transactional page includes PreContent</option>
+	<option value="309">Transactional page includes Search</option>
+	<option value="314">Transactional page includes Share button</option>
+	<option value="310">Transactional page includes Site Menu</option>
+	<option value="270">URL can&amp;#39;t be used for communications products</option>
+	<option value="94">Use aria-roledescription on elements with a semantic role</option>
+	<option value="95">Users should be able to zoom and scale the text up to 500%</option>
+	<option value="273">Uses improper template</option>
+	<option value="272">Uses the wrong type of content status template</option>
+	<option value="112">Using a graphical symbol alone to convey information</option>
+	<option value="156">Using a non-specific link such as &quot;click here&quot; or &quot;more&quot; without a mechanism to change the link text to specific text.</option>
+	<option value="183">Using a visibility change event to hide or display a document without switching the document&#39;s live regions between active and inactive</option>
+	<option value="130">Using an HTML layout table that does not make sense when linearized</option>
+	<option value="145">Using ASCII art without providing a text alternative</option>
+	<option value="155">Using background images that do not provide sufficient contrast with foreground text (or images of text)</option>
+	<option value="98">Using changes in text presentation to convey information without using the appropriate markup or text</option>
+	<option value="99">Using CSS to include images that convey important information</option>
+	<option value="157">Using dialogs or menus that are not adjacent to their trigger control in the sequential navigation order</option>
+	<option value="169">Using fixed sized containers and fixed position content (CSS)</option>
+	<option value="122">Using meta redirect with a time limit</option>
+	<option value="123">Using meta refresh to reload the page</option>
+	<option value="133">Using only pointing-device-specific event handlers (including gesture) for a function</option>
+	<option value="170">Using preformatted text or excluding preformatting text as an exception to no two dimensional scrolling.</option>
+	<option value="182">Using role=&quot;alert&quot; or aria-live=&quot;assertive&quot; on content which is not important and time-sensitive</option>
+	<option value="136">Using script to make div or span a user interface control in HTML without providing a role for the control</option>
+	<option value="134">Using script to remove focus when focus is received</option>
+	<option value="135">Using server-side techniques to automatically redirect pages after a time-out</option>
+	<option value="125">Using structural markup in a way that does not represent relationships in the content</option>
+	<option value="126">Using tabindex to create a tab order that does not preserve meaning and operability</option>
+	<option value="113">Using text alternatives that are not alternatives (e.g., filenames or placeholder text)</option>
+	<option value="144">Using text look-alikes to represent text without providing a text alternative</option>
+	<option value="100">Using text-decoration:blink without a mechanism to stop it in less than five seconds</option>
+	<option value="127">Using th elements, layout tables</option>
+	<option value="128">Using the blink element</option>
+	<option value="129">Using the pre element to markup tabular information</option>
+	<option value="114">Using two different labels for the same function on different Web pages within a set of Web pages</option>
+	<option value="115">Using white space characters to control spacing within a word</option>
+	<option value="116">Using white space characters to create multiple columns in plain text content</option>
+	<option value="117">Using white space characters to format tables in plain text content</option>
+	<option value="240">Visited link is not #7834bc</option>
+	<option value="154">Visually formatting a set of phone number fields but not including a text label</option>
+	<option value="275">Writing does not consider the needs of the audience</option>
+	<option value="274">Writing does not help people complete a task</option>
+	<option value="279">Writing does not use a consistent style</option>
+	<option value="278">Writing does not use a professional tone</option>
+	<option value="96">Zooming and scaling must not be disabled</option>
+
+</select>
+		<div class="errors" id="pageErrorErrs"></div>
+            </div>
+	    <div class="form-group">
+		    <input type="Submit" value="Submit" id="submitBtn">
+	    </div>
+				</form>
+		</main>
+		<nav>
+		<h2>Site Menu</h2>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+		</nav>
+		<footer>
+		</footer>
+		<script src="scripts/sitedemo.js"></script>
+	</body>
+</html>
