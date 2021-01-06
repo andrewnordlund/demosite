@@ -17,6 +17,13 @@
 		<section>
 			<h2>What is the purpose of this site?</h2>
 			<p>The purpose of this site utlimately is to demonstrate the necessity of human accessibility auditors.</p>
+			<p class="h3">Background</p>
+			<p>Accessibility auditing is a big job.  And it's only getting bigger.  Websites are getting more complex.  When I started doing accessibility audits in 2012 most sites I was auditing had already been brought to WCAG conformance.  They simply had to maintain that conformance with each release.  Most of those sites were static content.  Website interaction was done largely by way of filling in a form and clicking the "Submit" button, which would load a whole new page.  Furthermore, my group was only responsible for front-facing websites.  Intranet websites, or web based Commercial Off The Shelf (COTS) products were not required to be accessible or WCAG conformant.</p>
+			<p>At the time WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications) (or Aria for short) had limited support. So we discouraged its use.</p>
+			<p>Over time, those websites got more complex.  Some started using Angular.  Some became Single Page Apps (SPAs).  Some leveraged JSON and AJAX to become more dynamic.  Browser and Assistive Technology (AT) support of Aria got much better.  Websites grew much more complex.  In the beginning, a 50 page website may have taken half a day, and most issues were along the lines of skipped heading levels, or someone coding paragraphs as list items "because &lt;li&gt;s are easier to style with CSS than &lt;p&gt;s are."  (True story.  That line has been making me laugh for about 7 yars now.)</p>
+			<p>Now a 50 page website could easily take two or three times as long to audit because of the increased complexit.</p>
+			<p>And with the Accessible Canada Act, and the Public Service Accessibility Strategy my team needs to maintain WCAG conformance on front-facing websites as well as Intranet websites, and COTS products the organization is considering procuring.</p>
+			<div>Yup.  We're <h3 style="display: inline; font-size: 100%;">very</h3> busy</div>
 			<p>I will endeavor to show several examples of design patterns that won't be caught by automated accessibility auditing tools.  There will all be several examples of design patterns which conform to WCAG, but fail WCAG.</p>
 			<h3>WCAG vs Accessibility</h3>
 			<p>"Wait.  What?" you ask.  "How can something conform to WCAG, but not be accessible?"</p>
@@ -30,6 +37,8 @@
 		<h2>Site Menu</h2>
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			<li><a href="forms.html">Forms</a></li>
+
 		</ul>
 		</nav>
 		<footer>
